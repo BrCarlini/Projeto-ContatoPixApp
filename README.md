@@ -1,7 +1,7 @@
 # Projeto-ContatoPixApp
 Aplicativo para criar e exibir Contatos para Pix - Utilizado Kotlin e Android
 
-Aplicando os conhecimentos de Adapter, Dao e Model
+Aplicado os conhecimentos de Adapter, Dao e Model.
 #
 
 
@@ -15,3 +15,5 @@ Aplicando os conhecimentos de Adapter, Dao e Model
 
 
 ## Activity de Feed, com os contatos criados
+![image](https://user-images.githubusercontent.com/62159849/200962419-02b673d3-325e-4ac6-9529-f2f887351569.png)
+
