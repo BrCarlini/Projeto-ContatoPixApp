@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">contatosPix</string>
+
+    <string name="fab_main">FAB</string>
+    <string name="back_form">Arrow Back</string>
+</resources>

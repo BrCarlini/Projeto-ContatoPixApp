@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity">
+
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/back_form"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/title_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Cadastre um PIX"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_back" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nome_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_form2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Contato"
+            android:textColorHint="#8A616161"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/instituicao_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/nome_form"
+        app:layout_constraintStart_toStartOf="@id/nome_form"
+        app:layout_constraintTop_toBottomOf="@id/nome_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/instituicao_form2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instituição Financeira"
+            android:textColorHint="#8A616161"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/agencia_form"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/instituicao_form"
+        app:layout_constraintTop_toBottomOf="@id/instituicao_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/agencia_form2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agência"
+            android:inputType="number"
+            android:textColorHint="#8A616161"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/conta_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/instituicao_form"
+        app:layout_constraintStart_toEndOf="@id/agencia_form"
+        app:layout_constraintTop_toBottomOf="@id/instituicao_form">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/conta_form2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Conta"
+            android:inputType="number"
+            android:textColorHint="#8A616161"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSave_form"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Salvar"
+        app:layout_constraintEnd_toEndOf="@id/conta_form"
+        app:layout_constraintStart_toStartOf="@id/agencia_form"
+        app:layout_constraintTop_toBottomOf="@id/agencia_form" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
